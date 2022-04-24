@@ -1,1 +1,175 @@
-{}
+{
+    "settings": {
+        "advanced": {
+            "group": {
+                "devel": {
+                    "label": "Zet ontwikkelaarsmodus aan",
+                    "name": "Ontwikkelaarsmodus",
+                    "description": "Geeft toegang tot tools en onvoltooide opties die mogelijk als defect of gevaarlijk worden beschouwd. Disclaimer: applicatiebeheerders zijn niet verantwoordelijk voor eventuele bugs of problemen nadat deze optie is ingeschakeld - rapporteer ze niet!"
+                },
+                "csp": {
+                    "extends": {
+                        "thirdparty": {
+                            "description": "Stelt een lijst in met websites van derden die verbinding mogen maken of inhoud mogen weergeven.",
+                            "name": "Websites van derden",
+                            "list": {
+                                "gifProviders": "GIF-providers"
+                            }
+                        },
+                        "enable": {
+                            "label": "Gebruik het standaard inhoudsbeveiligingsbeleid",
+                            "description": "Schakelt over wanneer de toepassing de headers van het inhoudsbeveiligingsbeleid van Discord moet negeren en de client zijn eigen CSP moet laten instellen voor privacy- en beveiligingsproblemen."
+                        }
+                    },
+                    "name": "Inhoudsbeveiligingsbeleid"
+                },
+                "crossOrigin": {
+                    "name": "Cross-origin omleidingsgedrag.",
+                    "description": "Beheert de acties op cross-origin omleidingen. <b>Dit is van invloed op de applicatiebeveiliging</b>.",
+                    "label": "Waarschuw de gebruiker altijd voor cross-origin omleidingen naar externe applicaties."
+                },
+                "instance": {
+                    "name": "Discord instantie.",
+                    "description": "Selecteer de instantie waar WebCord verbinding mee moet maken. <b>Experimenteel</b> omdat de Fosscord implementatie niet afgerond is."
+                }
+            },
+            "name": "Geavanceerd"
+        },
+        "privacy": {
+            "group": {
+                "blockApi": {
+                    "label": {
+                        "typingIndicator": "Blokeer typ-indicator (<code>/typing</code>).",
+                        "science": "Blokkeer bekende telemetrie eindpunten (<code>/science</code> en <code>/tracing</code>)."
+                    },
+                    "name": "Discord API blokkeren",
+                    "description": "Blokkeert Discord API verzoeken voor de privacy te versterken."
+                },
+                "permissions": {
+                    "name": "Rechten",
+                    "label": {
+                        "camera": "Camera",
+                        "microphone": "Microfoon",
+                        "fullscreen": "Volledig scherm",
+                        "desktopCapture": "Desktop opnemen",
+                        "notifications": "Berichten"
+                    },
+                    "description": "Staat toe of weigert de rechtenchecks en verzoek aan de Discord website. Houd er rekening mee dat andere rechten die hier niet worden vermeld, automatisch worden geblokkeerd door WebCord."
+                }
+            },
+            "name": "Privacy"
+        },
+        "basic": {
+            "name": "Basis",
+            "group": {
+                "menuBar": {
+                    "name": "Menubalk",
+                    "description": "Verandert zichtbaarheidsinstellingen van de menubalk.",
+                    "label": "Verberg de menubalk automatisch (<kbd>ALT<kbd> toets schakelt de zichbaarheid)."
+                },
+                "tray": {
+                    "name": "Systeemvak",
+                    "description": "Verandert de zichtbaarheid van het iccon in het systeemvak.",
+                    "label": "Schakel het verberegen van het venster naar het systeemvak uit."
+                }
+            }
+        }
+    },
+    "tray": {
+        "quit": "Afsluiten",
+        "toggle": "Schakelen"
+    },
+    "menubar": {
+        "window": {
+            "groupName": "Venster",
+            "mobileMode": "Verberg zijbalk"
+        },
+        "enabled": "Ingeschakeld",
+        "file": {
+            "addon": {
+                "loadChrome": "Laad Chrome extensie",
+                "groupName": "Extensies",
+                "loadNode": "Laad Node extensie"
+            },
+            "groupName": "Bestand",
+            "quit": "Afsluiten",
+            "relaunch": "Opnieuw opstarten"
+        },
+        "view": {
+            "devTools": "Ontwikkelaarstools omschakelen",
+            "groupName": "View",
+            "reload": "Herladen",
+            "forceReload": "Forceer herladen",
+            "resetZoom": "Echte grootte",
+            "zoomIn": "Inzoomen",
+            "zoomOut": "Uitzoomen",
+            "fullScreen": "Fullscreen omschakelen"
+        },
+        "edit": {
+            "groupName": "Bewerk",
+            "undo": "Ongedaan maken",
+            "redo": "Opnieuw gedaan maken"
+        }
+    },
+    "dialog": {
+        "common": {
+            "source": "Bron",
+            "error": "Error",
+            "warning": "Waarschuwing",
+            "continue": "&Doorgaan",
+            "yes": "&Ja",
+            "no": "&Nee"
+        },
+        "ver": {
+            "recent": "Applicatie is geüpdatet!",
+            "updateBadge": "[UPDATE]",
+            "updateTitle": "Update beschikbaar!",
+            "update": "Nieuwe applicatieversie is beschikbaar!",
+            "devel": "Je gebruikt de niet-productie versie.",
+            "downgrade": "Je productie versie is nieuwer dan de stabiele versie!"
+        },
+        "permission": {
+            "check": {
+                "denied": "%s: Toestemmingscheck voor %s afgewezen."
+            },
+            "request": {
+                "denied": "%s: Toestemmingsverzoek voor %s afgewezen."
+            }
+        },
+        "mod": {
+            "nodeExt": "WebCord Node.js Addon",
+            "crx": "Chrome/Chromium Extensie"
+        },
+        "externalApp": {
+            "title": "Link word geopend in externe app.",
+            "message": "Een website probeert de link door te verwijzen naar een andere bron. Doorgaan?"
+        },
+        "hideMenuBar": "Omdat je de optie voor de menubalk te verbergen aan hebt gezet, zul je hier geen toegang tot krijgen na dat je de app opnieuw opstart, behalve als je de [ALT] toets gebruikt om de menubalk tijdelijk zichtbaar te maken."
+    },
+    "log": {
+        "singleInstance": "Wisselen naar het bestaande venster...",
+        "listenPort": "Aan het luisteren op poort %s."
+    },
+    "context": {
+        "copy": "Kopiëren",
+        "paste": "Plakken",
+        "cut": "Knippen",
+        "dictionaryAdd": "Toevoegen aan woordenboek",
+        "copyURL": "Kopieer link adres",
+        "copyURLText": "Kopieer link tekst",
+        "inspectElement": "Inspecteer"
+    },
+    "windows": {
+        "settings": "Instellingen",
+        "about": "Over",
+        "docs": "Documentatie",
+        "invite": "Uitnodiging"
+    },
+    "help": {
+        "groupName": "Help",
+        "repo": "Repository",
+        "bugs": "Een bug melden",
+        "contributors": "Auteurs en bijdragers:",
+        "credits": "Bedankt aan GyozaGuy voor zijn Electron Discord app - het was een goede bron om over de Electron API te leren en hoe je er een Discord web app mee kan maken."
+    }
+}
